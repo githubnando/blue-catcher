@@ -1,0 +1,15 @@
+{
+  "name": "blue-catcher",
+  "version": "1.0.0",
+  "description": "",
+  "main": "blue-catcher.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "ernandosouza04@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.75.0"
+  }
+}
