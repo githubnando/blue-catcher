@@ -10,6 +10,7 @@
   "author": "ernandosouza04@gmail.com",
   "license": "ISC",
   "dependencies": {
-    "request": "^2.75.0"
+    "request": "^2.75.0",
+    "yargs": "^6.3.0"
   }
 }
