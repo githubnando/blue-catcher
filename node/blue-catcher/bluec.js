@@ -1,17 +1,19 @@
 #!/usr/bin/node
 
+const request = require('request');
+const exec = require('child_process').exec;
+const sys = require('sys');
 
-var request = require('request'),
-  exec = require('child_process').exec,
-  sys = require('sys'),
-  owner =  '',
-  options = {
+const argv = require('./args');
+
+const owner =  argv.owner;
+const options = {
     url: `https://bitbucket.org/!api/1.0/users/${owner}`,
     auth: {
-      user: '',
-      pass: ''
+      user: argv.username,
+      pass: argv.password
     }
-  }
+};
 
 
 request(options, function (error, response, body) {
@@ -22,4 +24,4 @@ request(options, function (error, response, body) {
   JSON.parse(body).repositories.map(function(repo) {
     // clone the repository
   })
-})
+});

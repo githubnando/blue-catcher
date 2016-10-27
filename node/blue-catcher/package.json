@@ -2,7 +2,7 @@
   "name": "blue-catcher",
   "version": "1.0.0",
   "description": "",
-  "main": "blue-catcher.js",
+  "main": "bluec.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,6 +10,7 @@
   "author": "ernandosouza04@gmail.com",
   "license": "ISC",
   "dependencies": {
-    "request": "^2.75.0"
+    "request": "^2.75.0",
+    "yargs": "^6.3.0"
   }
 }
